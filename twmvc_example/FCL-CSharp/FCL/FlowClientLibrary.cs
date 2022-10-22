@@ -53,8 +53,10 @@ namespace Flow.FCL
             Config = config;
         }
         
-        public FlowClientLibrary(IWalletProvider walletProvider, Transaction transaction, CurrentUser currentUser)
+        public FlowClientLibrary(IWalletProvider walletProvider, Transaction transaction, CurrentUser currentUser, IFlowClient flowClient)
         {
+            FlowClient = flowClient;
+            
            _response = default(Cadence);
            _errorMessage = string.Empty;
            _isSuccessed = false;
@@ -161,6 +163,12 @@ namespace Flow.FCL
         public async Task<string> MutateResultAsync(string authorizationId, string sessionId)
         {
             var result = await _transaction.SendTransactionResultAsync(authorizationId, sessionId);
+            return result;
+        }
+        
+        public async Task<FlowTransactionResult> MetateExecuteResultAsync(string txId)
+        {
+            var result = await FlowClient.GetTransactionResultAsync(txId);
             return result;
         }
         

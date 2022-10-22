@@ -126,4 +126,13 @@ public class FlowController : ControllerBase
         var data = await _fcl.SignUserMessageResultAsync(signatureId);
         return new ApiResult(ResultCodeEnum.Success, data);
     }
+    
+    [HttpGet]
+    [Route("transaction/result/{txId}")]
+    public async Task<ApiResult> GetTxResult(string txId)
+    {
+        _logger.LogInformation($"TxId: {txId}");
+        var result = await _fcl.MetateExecuteResultAsync(txId);
+        return new ApiResult(ResultCodeEnum.Success, result);
+    }
 }

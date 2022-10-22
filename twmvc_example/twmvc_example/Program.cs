@@ -64,7 +64,8 @@ builder.Services.AddScoped<FlowClientLibrary>(provider => {
                                                   var walletProvider = provider.GetRequiredService<IWalletProvider>();
                                                   var transaction = provider.GetRequiredService<Transaction>();
                                                   var currentUser = provider.GetRequiredService<CurrentUser>();
-                                                  var fcl = new FlowClientLibrary(walletProvider, transaction, currentUser);
+                                                  var flowClient = provider.GetRequiredService<IFlowClient>();
+                                                  var fcl = new FlowClientLibrary(walletProvider, transaction, currentUser, flowClient);
                                                   
                                                   return fcl;
                                               });

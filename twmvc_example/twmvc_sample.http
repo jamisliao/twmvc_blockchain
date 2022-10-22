@@ -1,0 +1,51 @@
+POST https://flow-wallet-testnet.blocto.app/api/flow/authn HTTP/1.1
+Content-Type: application/application/json
+
+### Request Account
+# @name login
+GET https://localhost:7064/flow/login HTTP/1.1
+
+### Get address
+
+# @name account
+GET https://localhost:7064/flow/login/Result?authenticationId={{login.response.body.$.outPut.Result.AuthenticationId}} HTTP/1.1
+Content-Type: application/json
+
+### Send transaction step 1
+
+# @name transaction
+@receiveAddress = 0xe2c2f0fd9fdec656
+POST https://localhost:7064/flow/transaction/{{account.response.body.$.outPut.Result.Address}}/to/{{receiveAddress}}/2.1 HTTP/1.1
+Content-Type: application/json
+
+### Send transaction step 2
+# @name txr
+@authorizationId = {{transaction.response.body.$.outPut.Result.AuthorizationId}}
+@sessionId = {{transaction.response.body.$.outPut.Result.SessionId}}
+POST https://localhost:7064/flow/transaction/{{authorizationId}}/{{sessionId}} HTTP/1.1
+Content-Type: application/json
+
+### Sign message
+
+# @name signMessage
+@address = {{account.response.body.$.outPut.Result.Address}}
+POST https://localhost:7064/flow/signmessage/{{address}}/iamjamis HTTP/1.1
+Content-Type: application/json
+
+### Get sign message Result
+
+@signatureId = {{signMessage.response.body.$.outPut.Result.SignatureId}}
+GET https://localhost:7064/flow/signmessage/result/{{signatureId}} HTTP/1.1
+Content-Type: application/json
+
+### Get Transaction Result
+
+@txId = a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb
+GET https://localhost:7064/flow/transaction/result/{{txr.response.body.$.outPut.Result.txId}} HTTP/1.1
+Content-Type: application/json
+
+###
+
+@txId = a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb
+GET https://localhost:7064/flow/transaction/result/{{txId}} HTTP/1.1
+Content-Type: application/json
