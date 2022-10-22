@@ -1,0 +1,8 @@
+twmvc_blockchain/.idea
+twmvc_blockchain/FCL-CSharp/obj
+twmvc_blockchain/obj
+*/.idea
+*/bin
+*/*/bin
+*/*/obj
+.DS_Store

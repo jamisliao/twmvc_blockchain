@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>FCL_CSharp</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="FCL\.DS_Store" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\flow.net\src\Flow.Net.Sdk.Client.Http\Flow.Net.Sdk.Client.Http.csproj" />
+      <ProjectReference Include="..\..\..\flow.net\src\Flow.Net.Sdk.Core\Flow.Net.Sdk.Core.csproj" />
+      <ProjectReference Include="..\..\..\flow.net\src\Flow.Net.SDK\Flow.Net.Sdk.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Serilog" Version="2.12.0" />
+    </ItemGroup>
+
+</Project>
