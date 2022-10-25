@@ -15,11 +15,13 @@
         <PackageReference Include="Serilog.Sinks.ColoredConsole" Version="3.0.1" />
         <PackageReference Include="Serilog.Sinks.Literate" Version="3.0.0" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="6.0.10" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\Blocto.SDK\Blocto.SDK.csproj" />
       <ProjectReference Include="..\FCL-CSharp\FCL-CSharp.csproj" />
+      <ProjectReference Include="..\twmcv_example.Client\twmcv_example.Client.csproj" />
     </ItemGroup>
 
 </Project>
