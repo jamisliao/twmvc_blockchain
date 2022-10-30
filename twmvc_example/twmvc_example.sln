@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flow.Net.Sdk.Client.Http", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flow.Net.Sdk.Core", "Flow.Net.Sdk.Core\Flow.Net.Sdk.Core.csproj", "{BEBD97D3-7592-4DA8-8F4C-C713B9B6B13B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "twmcv_example.Client", "twmcv_example.Client\twmcv_example.Client.csproj", "{E817E130-BC7A-415B-8EE2-CCFC8E0402D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
