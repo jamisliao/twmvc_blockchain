@@ -6,11 +6,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCL-CSharp", "FCL-CSharp\FC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blocto.SDK", "Blocto.SDK\Blocto.SDK.csproj", "{2E09EA64-DB2E-4F82-A29C-74D38278F7C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flow.Net.Sdk", "..\..\flow.net\src\Flow.Net.SDK\Flow.Net.Sdk.csproj", "{AF591914-CA8C-48F7-9209-57B649682691}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flow.Net.Sdk", "Flow.Net.SDK\Flow.Net.Sdk.csproj", "{AD266687-070A-45A1-8509-E2512FF535DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flow.Net.Sdk.Core", "..\..\flow.net\src\Flow.Net.Sdk.Core\Flow.Net.Sdk.Core.csproj", "{57F0DD14-E499-4E2C-AC5F-B2EE468276A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flow.Net.Sdk.Client.Http", "Flow.Net.Sdk.Client.Http\Flow.Net.Sdk.Client.Http.csproj", "{3BEBEDAB-5F2E-40C7-B4C1-94C7C48025AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flow.Net.Sdk.Client.Http", "..\..\flow.net\src\Flow.Net.Sdk.Client.Http\Flow.Net.Sdk.Client.Http.csproj", "{B7B91CBB-13AB-411B-B6A3-48ABDCE35363}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flow.Net.Sdk.Core", "Flow.Net.Sdk.Core\Flow.Net.Sdk.Core.csproj", "{BEBD97D3-7592-4DA8-8F4C-C713B9B6B13B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,17 +30,17 @@ Global
 		{2E09EA64-DB2E-4F82-A29C-74D38278F7C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E09EA64-DB2E-4F82-A29C-74D38278F7C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E09EA64-DB2E-4F82-A29C-74D38278F7C2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AF591914-CA8C-48F7-9209-57B649682691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AF591914-CA8C-48F7-9209-57B649682691}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AF591914-CA8C-48F7-9209-57B649682691}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AF591914-CA8C-48F7-9209-57B649682691}.Release|Any CPU.Build.0 = Release|Any CPU
-		{57F0DD14-E499-4E2C-AC5F-B2EE468276A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{57F0DD14-E499-4E2C-AC5F-B2EE468276A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{57F0DD14-E499-4E2C-AC5F-B2EE468276A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{57F0DD14-E499-4E2C-AC5F-B2EE468276A0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B7B91CBB-13AB-411B-B6A3-48ABDCE35363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B7B91CBB-13AB-411B-B6A3-48ABDCE35363}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B7B91CBB-13AB-411B-B6A3-48ABDCE35363}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B7B91CBB-13AB-411B-B6A3-48ABDCE35363}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD266687-070A-45A1-8509-E2512FF535DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD266687-070A-45A1-8509-E2512FF535DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD266687-070A-45A1-8509-E2512FF535DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD266687-070A-45A1-8509-E2512FF535DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BEBEDAB-5F2E-40C7-B4C1-94C7C48025AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BEBEDAB-5F2E-40C7-B4C1-94C7C48025AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BEBEDAB-5F2E-40C7-B4C1-94C7C48025AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BEBEDAB-5F2E-40C7-B4C1-94C7C48025AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEBD97D3-7592-4DA8-8F4C-C713B9B6B13B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEBD97D3-7592-4DA8-8F4C-C713B9B6B13B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEBD97D3-7592-4DA8-8F4C-C713B9B6B13B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEBD97D3-7592-4DA8-8F4C-C713B9B6B13B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

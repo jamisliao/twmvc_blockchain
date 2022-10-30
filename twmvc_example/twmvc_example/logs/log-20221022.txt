@@ -1,0 +1,466 @@
+2022-10-22 21:12:46.128 +08:00 [INF] Now listening on: https://localhost:7064
+2022-10-22 21:12:46.192 +08:00 [INF] Now listening on: http://localhost:5061
+2022-10-22 21:12:46.192 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-22 21:12:46.193 +08:00 [INF] Hosting environment: Development
+2022-10-22 21:12:46.193 +08:00 [INF] Content root path: /Users/jamisliao/twmvc_blockchain/twmvc_example/twmvc_example/
+2022-10-22 21:14:09.511 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Flow.FCL.FlowClientLibrary.MetateExecuteResultAsync(String txId) in /Users/jamisliao/twmvc_blockchain/twmvc_example/FCL-CSharp/FCL/FlowClientLibrary.cs:line 169
+   at twmvc_example.Controllers.FlowController.GetTxResult(String txId) in /Users/jamisliao/twmvc_blockchain/twmvc_example/twmvc_example/Controllers/FlowController.cs:line 134
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-22 21:14:38.235 +08:00 [INF] Now listening on: https://localhost:7064
+2022-10-22 21:14:38.252 +08:00 [INF] Now listening on: http://localhost:5061
+2022-10-22 21:14:38.253 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-22 21:14:38.253 +08:00 [INF] Hosting environment: Development
+2022-10-22 21:14:38.253 +08:00 [INF] Content root path: /Users/jamisliao/twmvc_blockchain/twmvc_example/twmvc_example/
+2022-10-22 21:14:43.699 +08:00 [INF] TxId: a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb
+2022-10-22 21:14:50.333 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Flow.FCL.FlowClientLibrary.MetateExecuteResultAsync(String txId) in /Users/jamisliao/twmvc_blockchain/twmvc_example/FCL-CSharp/FCL/FlowClientLibrary.cs:line 169
+   at twmvc_example.Controllers.FlowController.GetTxResult(String txId) in /Users/jamisliao/twmvc_blockchain/twmvc_example/twmvc_example/Controllers/FlowController.cs:line 135
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-22 21:15:19.779 +08:00 [INF] TxId: a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb
+2022-10-22 21:15:19.817 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Flow.FCL.FlowClientLibrary.MetateExecuteResultAsync(String txId) in /Users/jamisliao/twmvc_blockchain/twmvc_example/FCL-CSharp/FCL/FlowClientLibrary.cs:line 169
+   at twmvc_example.Controllers.FlowController.GetTxResult(String txId) in /Users/jamisliao/twmvc_blockchain/twmvc_example/twmvc_example/Controllers/FlowController.cs:line 135
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-22 21:15:29.500 +08:00 [INF] TxId: a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb
+2022-10-22 21:16:56.271 +08:00 [INF] Now listening on: https://localhost:7064
+2022-10-22 21:16:56.291 +08:00 [INF] Now listening on: http://localhost:5061
+2022-10-22 21:16:56.291 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-22 21:16:56.292 +08:00 [INF] Hosting environment: Development
+2022-10-22 21:16:56.292 +08:00 [INF] Content root path: /Users/jamisliao/twmvc_blockchain/twmvc_example/twmvc_example/
+2022-10-22 21:17:00.350 +08:00 [INF] TxId: a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb
+2022-10-22 21:17:38.093 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb?expand=result"
+2022-10-22 21:17:38.097 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb?expand=result"
+2022-10-22 21:17:38.631 +08:00 [INF] Received HTTP response headers after 532.8577ms - 200
+2022-10-22 21:17:38.632 +08:00 [INF] End processing HTTP request after 541.7479ms - 200
+2022-10-22 21:19:02.513 +08:00 [INF] Now listening on: https://localhost:7064
+2022-10-22 21:19:02.530 +08:00 [INF] Now listening on: http://localhost:5061
+2022-10-22 21:19:02.531 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-22 21:19:02.531 +08:00 [INF] Hosting environment: Development
+2022-10-22 21:19:02.531 +08:00 [INF] Content root path: /Users/jamisliao/twmvc_blockchain/twmvc_example/twmvc_example/
+2022-10-22 21:19:07.002 +08:00 [INF] TxId: a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb
+2022-10-22 21:19:08.191 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb?expand=result"
+2022-10-22 21:19:08.193 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb?expand=result"
+2022-10-22 21:19:08.544 +08:00 [INF] Received HTTP response headers after 349.955ms - 200
+2022-10-22 21:19:08.545 +08:00 [INF] End processing HTTP request after 355.66ms - 200
+2022-10-22 21:20:23.709 +08:00 [INF] Now listening on: https://localhost:7064
+2022-10-22 21:20:23.726 +08:00 [INF] Now listening on: http://localhost:5061
+2022-10-22 21:20:23.726 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-22 21:20:23.727 +08:00 [INF] Hosting environment: Development
+2022-10-22 21:20:23.727 +08:00 [INF] Content root path: /Users/jamisliao/twmvc_blockchain/twmvc_example/twmvc_example/
+2022-10-22 21:21:44.779 +08:00 [INF] TxId: a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb
+2022-10-22 21:21:47.915 +08:00 [INF] TxId: a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb
+2022-10-22 21:22:04.924 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb?expand=result"
+2022-10-22 21:22:04.924 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb?expand=result"
+2022-10-22 21:22:04.927 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb?expand=result"
+2022-10-22 21:22:04.927 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb?expand=result"
+2022-10-22 21:22:05.403 +08:00 [INF] Received HTTP response headers after 473.3226ms - 200
+2022-10-22 21:22:05.403 +08:00 [INF] Received HTTP response headers after 473.2571ms - 200
+2022-10-22 21:22:05.404 +08:00 [INF] End processing HTTP request after 483.4576ms - 200
+2022-10-22 21:22:05.404 +08:00 [INF] End processing HTTP request after 483.4525ms - 200
+2022-10-22 21:24:12.448 +08:00 [INF] Now listening on: https://localhost:7064
+2022-10-22 21:24:12.468 +08:00 [INF] Now listening on: http://localhost:5061
+2022-10-22 21:24:12.469 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-22 21:24:12.469 +08:00 [INF] Hosting environment: Development
+2022-10-22 21:24:12.469 +08:00 [INF] Content root path: /Users/jamisliao/twmvc_blockchain/twmvc_example/twmvc_example/
+2022-10-22 21:24:34.733 +08:00 [INF] TxId: a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb
+2022-10-22 21:24:35.917 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb?expand=result"
+2022-10-22 21:24:35.919 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb?expand=result"
+2022-10-22 21:24:36.246 +08:00 [INF] Received HTTP response headers after 326.0934ms - 200
+2022-10-22 21:24:36.247 +08:00 [INF] End processing HTTP request after 331.271ms - 200
+2022-10-22 21:25:14.872 +08:00 [INF] TxId: a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb
+2022-10-22 21:25:15.944 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb?expand=result"
+2022-10-22 21:25:15.944 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb?expand=result"
+2022-10-22 21:25:16.256 +08:00 [INF] Received HTTP response headers after 312.0908ms - 200
+2022-10-22 21:25:16.257 +08:00 [INF] End processing HTTP request after 312.6094ms - 200
+2022-10-22 21:28:09.111 +08:00 [INF] Now listening on: https://localhost:7064
+2022-10-22 21:28:09.128 +08:00 [INF] Now listening on: http://localhost:5061
+2022-10-22 21:28:09.129 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-22 21:28:09.129 +08:00 [INF] Hosting environment: Development
+2022-10-22 21:28:09.129 +08:00 [INF] Content root path: /Users/jamisliao/twmvc_blockchain/twmvc_example/twmvc_example/
+2022-10-22 21:28:15.598 +08:00 [INF] TxId: a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb
+2022-10-22 21:28:16.626 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb?expand=result"
+2022-10-22 21:28:16.628 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb?expand=result"
+2022-10-22 21:28:16.995 +08:00 [INF] Received HTTP response headers after 366.3307ms - 200
+2022-10-22 21:28:16.996 +08:00 [INF] End processing HTTP request after 371.4644ms - 200
+2022-10-22 21:30:15.926 +08:00 [INF] Test serilog.
+2022-10-22 21:30:15.938 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authn"
+2022-10-22 21:30:15.939 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authn"
+2022-10-22 21:30:16.155 +08:00 [INF] Received HTTP response headers after 216.583ms - 200
+2022-10-22 21:30:16.156 +08:00 [INF] End processing HTTP request after 217.4185ms - 200
+2022-10-22 21:30:26.348 +08:00 [INF] AuthenticationId: FdZHtpr49
+2022-10-22 21:30:26.350 +08:00 [INF] Start processing HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authn?authenticationId=FdZHtpr49"
+2022-10-22 21:30:26.350 +08:00 [INF] Sending HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authn?authenticationId=FdZHtpr49"
+2022-10-22 21:30:26.381 +08:00 [INF] Received HTTP response headers after 31.0793ms - 200
+2022-10-22 21:30:26.382 +08:00 [INF] End processing HTTP request after 31.7504ms - 200
+2022-10-22 21:30:26.410 +08:00 [INF] Start processing HTTP request POST "https://rest-testnet.onflow.org/v1/scripts"
+2022-10-22 21:30:26.410 +08:00 [INF] Sending HTTP request POST "https://rest-testnet.onflow.org/v1/scripts"
+2022-10-22 21:30:26.708 +08:00 [INF] Received HTTP response headers after 297.736ms - 200
+2022-10-22 21:30:26.708 +08:00 [INF] End processing HTTP request after 298.4111ms - 200
+2022-10-22 21:31:03.048 +08:00 [INF] TxId: a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb
+2022-10-22 21:31:06.697 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb?expand=result"
+2022-10-22 21:31:06.697 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb?expand=result"
+2022-10-22 21:31:06.930 +08:00 [INF] Received HTTP response headers after 232.2943ms - 200
+2022-10-22 21:31:06.930 +08:00 [INF] End processing HTTP request after 232.7473ms - 200
+2022-10-22 21:32:18.104 +08:00 [INF] Test serilog.
+2022-10-22 21:32:18.106 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authn"
+2022-10-22 21:32:18.106 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authn"
+2022-10-22 21:32:18.349 +08:00 [INF] Received HTTP response headers after 242.3808ms - 200
+2022-10-22 21:32:18.350 +08:00 [INF] End processing HTTP request after 243.8416ms - 200
+2022-10-22 21:32:31.470 +08:00 [INF] AuthenticationId: zjROZPAKQ
+2022-10-22 21:32:31.471 +08:00 [INF] Start processing HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authn?authenticationId=zjROZPAKQ"
+2022-10-22 21:32:31.471 +08:00 [INF] Sending HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authn?authenticationId=zjROZPAKQ"
+2022-10-22 21:32:31.512 +08:00 [INF] Received HTTP response headers after 40.5792ms - 200
+2022-10-22 21:32:31.512 +08:00 [INF] End processing HTTP request after 41.4137ms - 200
+2022-10-22 21:32:31.516 +08:00 [INF] Start processing HTTP request POST "https://rest-testnet.onflow.org/v1/scripts"
+2022-10-22 21:32:31.516 +08:00 [INF] Sending HTTP request POST "https://rest-testnet.onflow.org/v1/scripts"
+2022-10-22 21:32:31.911 +08:00 [INF] Received HTTP response headers after 394.9463ms - 200
+2022-10-22 21:32:31.912 +08:00 [INF] End processing HTTP request after 396.4965ms - 200
+2022-10-22 21:32:38.170 +08:00 [INF] Address: 0x068606b2acddc1ca, ReceivceAddress: 0xe2c2f0fd9fdec656, Value: 2.1
+2022-10-22 21:32:38.177 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/blocks?height=sealed"
+2022-10-22 21:32:38.177 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/blocks?height=sealed"
+2022-10-22 21:32:38.410 +08:00 [INF] Received HTTP response headers after 233.0229ms - 200
+2022-10-22 21:32:38.411 +08:00 [INF] End processing HTTP request after 234.3027ms - 200
+2022-10-22 21:32:38.445 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/pre-authz?sessionId=PlYtrK2zAP-zGdUFiqKS9"
+2022-10-22 21:32:38.445 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/pre-authz?sessionId=PlYtrK2zAP-zGdUFiqKS9"
+2022-10-22 21:32:39.232 +08:00 [INF] Received HTTP response headers after 787.3733ms - 200
+2022-10-22 21:32:39.233 +08:00 [INF] End processing HTTP request after 788.011ms - 200
+2022-10-22 21:32:39.256 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/accounts/f086a545ce3c552d?block_height=sealed&expand=contracts,keys"
+2022-10-22 21:32:39.256 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/accounts/f086a545ce3c552d?block_height=sealed&expand=contracts,keys"
+2022-10-22 21:32:39.572 +08:00 [INF] Received HTTP response headers after 316.1223ms - 200
+2022-10-22 21:32:39.573 +08:00 [INF] End processing HTTP request after 317.317ms - 200
+2022-10-22 21:32:39.725 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authz?sessionId=PlYtrK2zAP-zGdUFiqKS9"
+2022-10-22 21:32:39.725 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authz?sessionId=PlYtrK2zAP-zGdUFiqKS9"
+2022-10-22 21:32:39.819 +08:00 [INF] Received HTTP response headers after 94.2091ms - 200
+2022-10-22 21:32:39.819 +08:00 [INF] End processing HTTP request after 94.8696ms - 200
+2022-10-22 21:43:20.259 +08:00 [INF] Now listening on: https://localhost:7064
+2022-10-22 21:43:20.278 +08:00 [INF] Now listening on: http://localhost:5061
+2022-10-22 21:43:20.279 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-22 21:43:20.279 +08:00 [INF] Hosting environment: Development
+2022-10-22 21:43:20.279 +08:00 [INF] Content root path: /Users/jamisliao/twmvc_blockchain/twmvc_example/twmvc_example/
+2022-10-22 21:44:32.381 +08:00 [INF] Test serilog.
+2022-10-22 21:44:32.451 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authn"
+2022-10-22 21:44:32.452 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authn"
+2022-10-22 21:44:32.712 +08:00 [INF] Received HTTP response headers after 259.1919ms - 200
+2022-10-22 21:44:32.713 +08:00 [INF] End processing HTTP request after 263.8246ms - 200
+2022-10-22 21:45:10.829 +08:00 [INF] AuthenticationId: BlWXiBpRE
+2022-10-22 21:45:10.833 +08:00 [INF] Start processing HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authn?authenticationId=BlWXiBpRE"
+2022-10-22 21:45:10.833 +08:00 [INF] Sending HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authn?authenticationId=BlWXiBpRE"
+2022-10-22 21:45:10.866 +08:00 [INF] Received HTTP response headers after 32.8607ms - 200
+2022-10-22 21:45:10.866 +08:00 [INF] End processing HTTP request after 33.3957ms - 200
+2022-10-22 21:45:10.915 +08:00 [INF] Start processing HTTP request POST "https://rest-testnet.onflow.org/v1/scripts"
+2022-10-22 21:45:10.915 +08:00 [INF] Sending HTTP request POST "https://rest-testnet.onflow.org/v1/scripts"
+2022-10-22 21:45:11.240 +08:00 [INF] Received HTTP response headers after 325.2626ms - 200
+2022-10-22 21:45:11.241 +08:00 [INF] End processing HTTP request after 326.0127ms - 200
+2022-10-22 21:45:40.051 +08:00 [INF] Test serilog.
+2022-10-22 21:45:40.052 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authn"
+2022-10-22 21:45:40.052 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authn"
+2022-10-22 21:45:40.186 +08:00 [INF] Received HTTP response headers after 134.4598ms - 200
+2022-10-22 21:45:40.193 +08:00 [INF] End processing HTTP request after 141.3584ms - 200
+2022-10-22 21:45:44.164 +08:00 [INF] AuthenticationId: GFMkmIWGa
+2022-10-22 21:45:44.165 +08:00 [INF] Start processing HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authn?authenticationId=GFMkmIWGa"
+2022-10-22 21:45:44.165 +08:00 [INF] Sending HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authn?authenticationId=GFMkmIWGa"
+2022-10-22 21:45:44.202 +08:00 [INF] Received HTTP response headers after 36.469ms - 200
+2022-10-22 21:45:44.202 +08:00 [INF] End processing HTTP request after 37.124ms - 200
+2022-10-22 21:46:05.004 +08:00 [INF] Test serilog.
+2022-10-22 21:46:05.006 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authn"
+2022-10-22 21:46:05.006 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authn"
+2022-10-22 21:46:05.146 +08:00 [INF] Received HTTP response headers after 139.9659ms - 200
+2022-10-22 21:46:05.147 +08:00 [INF] End processing HTTP request after 140.7205ms - 200
+2022-10-22 21:46:13.815 +08:00 [INF] AuthenticationId: _76Aep24L
+2022-10-22 21:46:13.816 +08:00 [INF] Start processing HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authn?authenticationId=_76Aep24L"
+2022-10-22 21:46:13.816 +08:00 [INF] Sending HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authn?authenticationId=_76Aep24L"
+2022-10-22 21:46:13.849 +08:00 [INF] Received HTTP response headers after 32.8289ms - 200
+2022-10-22 21:46:13.850 +08:00 [INF] End processing HTTP request after 33.9982ms - 200
+2022-10-22 21:46:13.853 +08:00 [INF] Start processing HTTP request POST "https://rest-testnet.onflow.org/v1/scripts"
+2022-10-22 21:46:13.853 +08:00 [INF] Sending HTTP request POST "https://rest-testnet.onflow.org/v1/scripts"
+2022-10-22 21:46:14.095 +08:00 [INF] Received HTTP response headers after 241.9252ms - 200
+2022-10-22 21:46:14.095 +08:00 [INF] End processing HTTP request after 242.5127ms - 200
+2022-10-22 21:46:25.274 +08:00 [INF] Address: 0x068606b2acddc1ca, ReceivceAddress: 0xe2c2f0fd9fdec656, Value: 2.1
+2022-10-22 21:46:25.284 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/blocks?height=sealed"
+2022-10-22 21:46:25.285 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/blocks?height=sealed"
+2022-10-22 21:46:25.528 +08:00 [INF] Received HTTP response headers after 243.028ms - 200
+2022-10-22 21:46:25.528 +08:00 [INF] End processing HTTP request after 243.4253ms - 200
+2022-10-22 21:46:25.544 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/pre-authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 21:46:25.545 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/pre-authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 21:46:26.282 +08:00 [INF] Received HTTP response headers after 737.264ms - 200
+2022-10-22 21:46:26.283 +08:00 [INF] End processing HTTP request after 738.7342ms - 200
+2022-10-22 21:46:26.304 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/accounts/f086a545ce3c552d?block_height=sealed&expand=contracts,keys"
+2022-10-22 21:46:26.304 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/accounts/f086a545ce3c552d?block_height=sealed&expand=contracts,keys"
+2022-10-22 21:46:26.586 +08:00 [INF] Received HTTP response headers after 281.6443ms - 200
+2022-10-22 21:46:26.587 +08:00 [INF] End processing HTTP request after 282.64ms - 200
+2022-10-22 21:46:26.747 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 21:46:26.747 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 21:46:26.854 +08:00 [INF] Received HTTP response headers after 106.1769ms - 200
+2022-10-22 21:46:26.854 +08:00 [INF] End processing HTTP request after 106.8683ms - 200
+2022-10-22 21:47:26.219 +08:00 [INF] AuthorizationId: XORbkzm4m, SessionId: hHsYcdg3Hk-tZXoM66Ykf
+2022-10-22 21:47:30.574 +08:00 [INF] Start processing HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf&authorizationId=XORbkzm4m"
+2022-10-22 21:47:30.575 +08:00 [INF] Sending HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf&authorizationId=XORbkzm4m"
+2022-10-22 21:47:30.641 +08:00 [INF] Received HTTP response headers after 66.352ms - 200
+2022-10-22 21:47:30.641 +08:00 [INF] End processing HTTP request after 66.9374ms - 200
+2022-10-22 21:47:30.645 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/payer?sessionId=hHsYcdg3Hk-tZXoM66Ykf&payerId=443fc39c-4c0e-420a-baff-5affd1f99309"
+2022-10-22 21:47:30.646 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/payer?sessionId=hHsYcdg3Hk-tZXoM66Ykf&payerId=443fc39c-4c0e-420a-baff-5affd1f99309"
+2022-10-22 21:47:30.763 +08:00 [INF] Received HTTP response headers after 117.5269ms - 200
+2022-10-22 21:47:30.763 +08:00 [INF] End processing HTTP request after 118.0026ms - 200
+2022-10-22 21:47:33.300 +08:00 [INF] Start processing HTTP request POST "https://rest-testnet.onflow.org/v1/transactions"
+2022-10-22 21:47:33.300 +08:00 [INF] Sending HTTP request POST "https://rest-testnet.onflow.org/v1/transactions"
+2022-10-22 21:47:33.676 +08:00 [INF] Received HTTP response headers after 375.6926ms - 200
+2022-10-22 21:47:33.677 +08:00 [INF] End processing HTTP request after 376.2003ms - 200
+2022-10-22 21:49:59.841 +08:00 [INF] Address: 0x068606b2acddc1ca, ReceivceAddress: 0xe2c2f0fd9fdec656, Value: 2.1
+2022-10-22 21:49:59.844 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/blocks?height=sealed"
+2022-10-22 21:49:59.845 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/blocks?height=sealed"
+2022-10-22 21:50:00.122 +08:00 [INF] Received HTTP response headers after 276.6025ms - 200
+2022-10-22 21:50:00.122 +08:00 [INF] End processing HTTP request after 277.6946ms - 200
+2022-10-22 21:50:00.139 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/pre-authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 21:50:00.140 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/pre-authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 21:50:01.065 +08:00 [INF] Received HTTP response headers after 924.3345ms - 200
+2022-10-22 21:50:01.065 +08:00 [INF] End processing HTTP request after 939.5255ms - 200
+2022-10-22 21:50:01.066 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/accounts/f086a545ce3c552d?block_height=sealed&expand=contracts,keys"
+2022-10-22 21:50:01.066 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/accounts/f086a545ce3c552d?block_height=sealed&expand=contracts,keys"
+2022-10-22 21:50:01.337 +08:00 [INF] Received HTTP response headers after 270.2586ms - 200
+2022-10-22 21:50:01.337 +08:00 [INF] End processing HTTP request after 271.1608ms - 200
+2022-10-22 21:50:01.486 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 21:50:01.486 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 21:50:01.605 +08:00 [INF] Received HTTP response headers after 119.3187ms - 200
+2022-10-22 21:50:01.607 +08:00 [INF] End processing HTTP request after 120.8649ms - 200
+2022-10-22 21:50:19.653 +08:00 [INF] AuthorizationId: MNf1TKg41, SessionId: hHsYcdg3Hk-tZXoM66Ykf
+2022-10-22 21:50:19.654 +08:00 [INF] Start processing HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf&authorizationId=MNf1TKg41"
+2022-10-22 21:50:19.654 +08:00 [INF] Sending HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf&authorizationId=MNf1TKg41"
+2022-10-22 21:50:19.687 +08:00 [INF] Received HTTP response headers after 32.5967ms - 200
+2022-10-22 21:50:19.687 +08:00 [INF] End processing HTTP request after 33.1517ms - 200
+2022-10-22 21:50:19.690 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/payer?sessionId=hHsYcdg3Hk-tZXoM66Ykf&payerId=94d4bfcf-5d81-43ef-a52e-bbe6459b2c58"
+2022-10-22 21:50:19.691 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/payer?sessionId=hHsYcdg3Hk-tZXoM66Ykf&payerId=94d4bfcf-5d81-43ef-a52e-bbe6459b2c58"
+2022-10-22 21:50:19.788 +08:00 [INF] Received HTTP response headers after 96.9069ms - 200
+2022-10-22 21:50:19.788 +08:00 [INF] End processing HTTP request after 97.7522ms - 200
+2022-10-22 21:50:19.789 +08:00 [INF] Start processing HTTP request POST "https://rest-testnet.onflow.org/v1/transactions"
+2022-10-22 21:50:19.794 +08:00 [INF] Sending HTTP request POST "https://rest-testnet.onflow.org/v1/transactions"
+2022-10-22 21:50:20.066 +08:00 [INF] Received HTTP response headers after 271.1529ms - 200
+2022-10-22 21:50:20.066 +08:00 [INF] End processing HTTP request after 276.3925ms - 200
+2022-10-22 21:57:40.207 +08:00 [INF] Address: 0x068606b2acddc1ca, ReceivceAddress: 0xe2c2f0fd9fdec656, Value: 2.1
+2022-10-22 21:57:40.210 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/blocks?height=sealed"
+2022-10-22 21:57:40.210 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/blocks?height=sealed"
+2022-10-22 21:57:40.561 +08:00 [INF] Received HTTP response headers after 351.3768ms - 200
+2022-10-22 21:57:40.562 +08:00 [INF] End processing HTTP request after 351.931ms - 200
+2022-10-22 21:57:40.563 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/pre-authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 21:57:40.563 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/pre-authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 21:57:41.350 +08:00 [INF] Received HTTP response headers after 786.6733ms - 200
+2022-10-22 21:57:41.351 +08:00 [INF] End processing HTTP request after 787.7523ms - 200
+2022-10-22 21:57:41.353 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/accounts/f086a545ce3c552d?block_height=sealed&expand=contracts,keys"
+2022-10-22 21:57:41.353 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/accounts/f086a545ce3c552d?block_height=sealed&expand=contracts,keys"
+2022-10-22 21:57:41.616 +08:00 [INF] Received HTTP response headers after 262.4609ms - 200
+2022-10-22 21:57:41.617 +08:00 [INF] End processing HTTP request after 264.2186ms - 200
+2022-10-22 21:57:41.759 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 21:57:41.759 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 21:57:41.840 +08:00 [INF] Received HTTP response headers after 80.9895ms - 200
+2022-10-22 21:57:41.841 +08:00 [INF] End processing HTTP request after 81.7089ms - 200
+2022-10-22 21:57:50.226 +08:00 [INF] AuthorizationId: jjRWYi0gq, SessionId: hHsYcdg3Hk-tZXoM66Ykf
+2022-10-22 21:57:50.226 +08:00 [INF] Start processing HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf&authorizationId=jjRWYi0gq"
+2022-10-22 21:57:50.227 +08:00 [INF] Sending HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf&authorizationId=jjRWYi0gq"
+2022-10-22 21:57:50.254 +08:00 [INF] Received HTTP response headers after 27.3498ms - 200
+2022-10-22 21:57:50.255 +08:00 [INF] End processing HTTP request after 28.1183ms - 200
+2022-10-22 21:57:50.257 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/payer?sessionId=hHsYcdg3Hk-tZXoM66Ykf&payerId=9c271ec3-0ce8-49f6-9668-1319fccd6ebf"
+2022-10-22 21:57:50.257 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/payer?sessionId=hHsYcdg3Hk-tZXoM66Ykf&payerId=9c271ec3-0ce8-49f6-9668-1319fccd6ebf"
+2022-10-22 21:57:50.394 +08:00 [INF] Received HTTP response headers after 136.8498ms - 200
+2022-10-22 21:57:50.395 +08:00 [INF] End processing HTTP request after 137.8161ms - 200
+2022-10-22 21:57:50.397 +08:00 [INF] Start processing HTTP request POST "https://rest-testnet.onflow.org/v1/transactions"
+2022-10-22 21:57:50.398 +08:00 [INF] Sending HTTP request POST "https://rest-testnet.onflow.org/v1/transactions"
+2022-10-22 21:57:50.627 +08:00 [INF] Received HTTP response headers after 228.5993ms - 200
+2022-10-22 21:57:50.627 +08:00 [INF] End processing HTTP request after 230.761ms - 200
+2022-10-22 21:57:58.504 +08:00 [INF] TxId: 4f6763e0fd7e170aa2a7f0102c7b97b6aa91c9a05c79e9dec62562f566c95e2a
+2022-10-22 21:57:58.513 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/4f6763e0fd7e170aa2a7f0102c7b97b6aa91c9a05c79e9dec62562f566c95e2a?expand=result"
+2022-10-22 21:57:58.517 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/4f6763e0fd7e170aa2a7f0102c7b97b6aa91c9a05c79e9dec62562f566c95e2a?expand=result"
+2022-10-22 21:57:59.474 +08:00 [INF] Received HTTP response headers after 957.252ms - 200
+2022-10-22 21:57:59.475 +08:00 [INF] End processing HTTP request after 961.3294ms - 200
+2022-10-22 21:58:36.006 +08:00 [INF] TxId: 4f6763e0fd7e170aa2a7f0102c7b97b6aa91c9a05c79e9dec62562f566c95e2a
+2022-10-22 21:58:36.008 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/4f6763e0fd7e170aa2a7f0102c7b97b6aa91c9a05c79e9dec62562f566c95e2a?expand=result"
+2022-10-22 21:58:36.008 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/4f6763e0fd7e170aa2a7f0102c7b97b6aa91c9a05c79e9dec62562f566c95e2a?expand=result"
+2022-10-22 21:58:36.987 +08:00 [INF] Received HTTP response headers after 979.0142ms - 200
+2022-10-22 21:58:36.988 +08:00 [INF] End processing HTTP request after 979.8408ms - 200
+2022-10-22 21:58:38.608 +08:00 [INF] TxId: 4f6763e0fd7e170aa2a7f0102c7b97b6aa91c9a05c79e9dec62562f566c95e2a
+2022-10-22 21:58:38.609 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/4f6763e0fd7e170aa2a7f0102c7b97b6aa91c9a05c79e9dec62562f566c95e2a?expand=result"
+2022-10-22 21:58:38.609 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/4f6763e0fd7e170aa2a7f0102c7b97b6aa91c9a05c79e9dec62562f566c95e2a?expand=result"
+2022-10-22 21:58:39.584 +08:00 [INF] Received HTTP response headers after 973.8838ms - 200
+2022-10-22 21:58:39.585 +08:00 [INF] End processing HTTP request after 975.789ms - 200
+2022-10-22 21:59:29.533 +08:00 [INF] TxId: a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb
+2022-10-22 21:59:29.539 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb?expand=result"
+2022-10-22 21:59:29.539 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/a9b9bdd50823b6e843b4763cbe92721964f99c30ed905fa02b3fd1be8f098bfb?expand=result"
+2022-10-22 21:59:29.797 +08:00 [INF] Received HTTP response headers after 257.4876ms - 200
+2022-10-22 21:59:29.797 +08:00 [INF] End processing HTTP request after 258.4171ms - 200
+2022-10-22 22:00:19.141 +08:00 [INF] TxId: 4f6763e0fd7e170aa2a7f0102c7b97b6aa91c9a05c79e9dec62562f566c95e2a
+2022-10-22 22:00:19.144 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/4f6763e0fd7e170aa2a7f0102c7b97b6aa91c9a05c79e9dec62562f566c95e2a?expand=result"
+2022-10-22 22:00:19.144 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/4f6763e0fd7e170aa2a7f0102c7b97b6aa91c9a05c79e9dec62562f566c95e2a?expand=result"
+2022-10-22 22:00:19.438 +08:00 [INF] Received HTTP response headers after 293.894ms - 200
+2022-10-22 22:00:19.439 +08:00 [INF] End processing HTTP request after 295.169ms - 200
+2022-10-22 22:01:09.959 +08:00 [INF] Address: 0x068606b2acddc1ca, ReceivceAddress: 0xe2c2f0fd9fdec656, Value: 2.1
+2022-10-22 22:01:09.961 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/blocks?height=sealed"
+2022-10-22 22:01:09.961 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/blocks?height=sealed"
+2022-10-22 22:01:10.213 +08:00 [INF] Received HTTP response headers after 250.9062ms - 200
+2022-10-22 22:01:10.213 +08:00 [INF] End processing HTTP request after 252.5735ms - 200
+2022-10-22 22:01:10.217 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/pre-authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 22:01:10.218 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/pre-authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 22:01:11.035 +08:00 [INF] Received HTTP response headers after 816.2949ms - 200
+2022-10-22 22:01:11.035 +08:00 [INF] End processing HTTP request after 817.8037ms - 200
+2022-10-22 22:01:11.036 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/accounts/f086a545ce3c552d?block_height=sealed&expand=contracts,keys"
+2022-10-22 22:01:11.037 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/accounts/f086a545ce3c552d?block_height=sealed&expand=contracts,keys"
+2022-10-22 22:01:11.294 +08:00 [INF] Received HTTP response headers after 256.725ms - 200
+2022-10-22 22:01:11.294 +08:00 [INF] End processing HTTP request after 257.999ms - 200
+2022-10-22 22:01:11.429 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 22:01:11.429 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 22:01:11.538 +08:00 [INF] Received HTTP response headers after 108.2019ms - 200
+2022-10-22 22:01:11.538 +08:00 [INF] End processing HTTP request after 109.1588ms - 200
+2022-10-22 22:01:28.431 +08:00 [INF] AuthorizationId: nvSTLefWI, SessionId: hHsYcdg3Hk-tZXoM66Ykf
+2022-10-22 22:01:28.432 +08:00 [INF] Start processing HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf&authorizationId=nvSTLefWI"
+2022-10-22 22:01:28.432 +08:00 [INF] Sending HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf&authorizationId=nvSTLefWI"
+2022-10-22 22:01:28.489 +08:00 [INF] Received HTTP response headers after 56.676ms - 200
+2022-10-22 22:01:28.493 +08:00 [INF] End processing HTTP request after 61.2987ms - 200
+2022-10-22 22:01:28.497 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/payer?sessionId=hHsYcdg3Hk-tZXoM66Ykf&payerId=6c2d47e6-dc67-453e-a708-788b5b44e11a"
+2022-10-22 22:01:28.498 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/payer?sessionId=hHsYcdg3Hk-tZXoM66Ykf&payerId=6c2d47e6-dc67-453e-a708-788b5b44e11a"
+2022-10-22 22:01:28.671 +08:00 [INF] Received HTTP response headers after 173.1329ms - 200
+2022-10-22 22:01:28.672 +08:00 [INF] End processing HTTP request after 175.2276ms - 200
+2022-10-22 22:01:28.674 +08:00 [INF] Start processing HTTP request POST "https://rest-testnet.onflow.org/v1/transactions"
+2022-10-22 22:01:28.675 +08:00 [INF] Sending HTTP request POST "https://rest-testnet.onflow.org/v1/transactions"
+2022-10-22 22:01:28.942 +08:00 [INF] Received HTTP response headers after 266.3969ms - 200
+2022-10-22 22:01:28.942 +08:00 [INF] End processing HTTP request after 267.6357ms - 200
+2022-10-22 22:01:34.899 +08:00 [INF] TxId: 7b2e4d2c53c78ab86a1dfdf0f978aa412020d6c4288157a69f2d21e8c7a64588
+2022-10-22 22:01:34.899 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/7b2e4d2c53c78ab86a1dfdf0f978aa412020d6c4288157a69f2d21e8c7a64588?expand=result"
+2022-10-22 22:01:34.899 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/7b2e4d2c53c78ab86a1dfdf0f978aa412020d6c4288157a69f2d21e8c7a64588?expand=result"
+2022-10-22 22:01:35.135 +08:00 [INF] Received HTTP response headers after 235.7308ms - 200
+2022-10-22 22:01:35.136 +08:00 [INF] End processing HTTP request after 236.8136ms - 200
+2022-10-22 22:01:53.444 +08:00 [INF] TxId: 7b2e4d2c53c78ab86a1dfdf0f978aa412020d6c4288157a69f2d21e8c7a64588
+2022-10-22 22:01:53.446 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/7b2e4d2c53c78ab86a1dfdf0f978aa412020d6c4288157a69f2d21e8c7a64588?expand=result"
+2022-10-22 22:01:53.446 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/7b2e4d2c53c78ab86a1dfdf0f978aa412020d6c4288157a69f2d21e8c7a64588?expand=result"
+2022-10-22 22:01:53.676 +08:00 [INF] Received HTTP response headers after 228.9186ms - 200
+2022-10-22 22:01:53.677 +08:00 [INF] End processing HTTP request after 230.6175ms - 200
+2022-10-22 22:02:17.849 +08:00 [INF] Message: iamjamis
+2022-10-22 22:02:17.855 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/user-signature?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 22:02:17.855 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/user-signature?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 22:02:17.958 +08:00 [INF] Received HTTP response headers after 103.0174ms - 200
+2022-10-22 22:02:17.959 +08:00 [INF] End processing HTTP request after 103.8174ms - 200
+2022-10-22 22:02:32.865 +08:00 [INF] SignatureId: aeKW2C-83
+2022-10-22 22:02:32.873 +08:00 [INF] Start processing HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/user-signature?signatureId=aeKW2C-83&sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 22:02:32.873 +08:00 [INF] Sending HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/user-signature?signatureId=aeKW2C-83&sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 22:02:32.947 +08:00 [INF] Received HTTP response headers after 73.5185ms - 200
+2022-10-22 22:02:32.947 +08:00 [INF] End processing HTTP request after 74.6243ms - 200
+2022-10-22 22:07:27.458 +08:00 [INF] TxId: 7b2e4d2c53c78ab86a1dfdf0f978aa412020d6c4288157a69f2d21e8c7a64588
+2022-10-22 22:07:27.459 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/7b2e4d2c53c78ab86a1dfdf0f978aa412020d6c4288157a69f2d21e8c7a64588?expand=result"
+2022-10-22 22:07:27.459 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/transactions/7b2e4d2c53c78ab86a1dfdf0f978aa412020d6c4288157a69f2d21e8c7a64588?expand=result"
+2022-10-22 22:07:27.800 +08:00 [INF] Received HTTP response headers after 340.8634ms - 200
+2022-10-22 22:07:27.801 +08:00 [INF] End processing HTTP request after 342.359ms - 200
+2022-10-22 22:08:19.447 +08:00 [INF] AuthenticationId: _76Aep24L
+2022-10-22 22:08:19.448 +08:00 [INF] Start processing HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authn?authenticationId=_76Aep24L"
+2022-10-22 22:08:19.449 +08:00 [INF] Sending HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authn?authenticationId=_76Aep24L"
+2022-10-22 22:08:19.572 +08:00 [INF] Received HTTP response headers after 123.3939ms - 200
+2022-10-22 22:08:19.573 +08:00 [INF] End processing HTTP request after 124.42ms - 200
+2022-10-22 22:08:19.578 +08:00 [INF] Start processing HTTP request POST "https://rest-testnet.onflow.org/v1/scripts"
+2022-10-22 22:08:19.579 +08:00 [INF] Sending HTTP request POST "https://rest-testnet.onflow.org/v1/scripts"
+2022-10-22 22:08:19.817 +08:00 [INF] Received HTTP response headers after 238.3096ms - 200
+2022-10-22 22:08:19.818 +08:00 [INF] End processing HTTP request after 240.0505ms - 200
+2022-10-22 22:11:04.702 +08:00 [INF] Test serilog.
+2022-10-22 22:11:04.707 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authn"
+2022-10-22 22:11:04.708 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authn"
+2022-10-22 22:11:04.900 +08:00 [INF] Received HTTP response headers after 191.9927ms - 200
+2022-10-22 22:11:04.901 +08:00 [INF] End processing HTTP request after 193.2967ms - 200
+2022-10-22 22:11:22.363 +08:00 [INF] Address: 0x068606b2acddc1ca, ReceivceAddress: 0xe2c2f0fd9fdec656, Value: 2.1
+2022-10-22 22:11:22.364 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/blocks?height=sealed"
+2022-10-22 22:11:22.364 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/blocks?height=sealed"
+2022-10-22 22:11:22.672 +08:00 [INF] Received HTTP response headers after 307.7257ms - 200
+2022-10-22 22:11:22.673 +08:00 [INF] End processing HTTP request after 308.4802ms - 200
+2022-10-22 22:11:22.675 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/pre-authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 22:11:22.676 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/pre-authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 22:11:23.464 +08:00 [INF] Received HTTP response headers after 787.4449ms - 200
+2022-10-22 22:11:23.464 +08:00 [INF] End processing HTTP request after 789.4604ms - 200
+2022-10-22 22:11:23.466 +08:00 [INF] Start processing HTTP request GET "https://rest-testnet.onflow.org/v1/accounts/f086a545ce3c552d?block_height=sealed&expand=contracts,keys"
+2022-10-22 22:11:23.466 +08:00 [INF] Sending HTTP request GET "https://rest-testnet.onflow.org/v1/accounts/f086a545ce3c552d?block_height=sealed&expand=contracts,keys"
+2022-10-22 22:11:23.729 +08:00 [INF] Received HTTP response headers after 263.0281ms - 200
+2022-10-22 22:11:23.729 +08:00 [INF] End processing HTTP request after 263.7603ms - 200
+2022-10-22 22:11:23.880 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 22:11:23.881 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authz?sessionId=hHsYcdg3Hk-tZXoM66Ykf"
+2022-10-22 22:11:24.003 +08:00 [INF] Received HTTP response headers after 122.2098ms - 200
+2022-10-22 22:11:24.003 +08:00 [INF] End processing HTTP request after 122.8254ms - 200
+2022-10-22 22:11:28.565 +08:00 [INF] AuthenticationId: gdiSYHL7e
+2022-10-22 22:11:28.568 +08:00 [INF] Start processing HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authn?authenticationId=gdiSYHL7e"
+2022-10-22 22:11:28.568 +08:00 [INF] Sending HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authn?authenticationId=gdiSYHL7e"
+2022-10-22 22:11:28.600 +08:00 [INF] Received HTTP response headers after 30.028ms - 200
+2022-10-22 22:11:28.600 +08:00 [INF] End processing HTTP request after 31.8685ms - 200
+2022-10-22 22:11:28.602 +08:00 [INF] Start processing HTTP request POST "https://rest-testnet.onflow.org/v1/scripts"
+2022-10-22 22:11:28.602 +08:00 [INF] Sending HTTP request POST "https://rest-testnet.onflow.org/v1/scripts"
+2022-10-22 22:11:28.866 +08:00 [INF] Received HTTP response headers after 263.9786ms - 200
+2022-10-22 22:11:28.867 +08:00 [INF] End processing HTTP request after 265.0679ms - 200
+2022-10-22 22:17:49.344 +08:00 [INF] Test serilog.
+2022-10-22 22:17:49.347 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authn"
+2022-10-22 22:17:49.348 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authn"
+2022-10-22 22:17:49.570 +08:00 [INF] Received HTTP response headers after 220.8976ms - 200
+2022-10-22 22:17:49.571 +08:00 [INF] End processing HTTP request after 224.0868ms - 200
+2022-10-22 22:18:00.471 +08:00 [INF] AuthenticationId: 0XnOpJmTR
+2022-10-22 22:18:00.474 +08:00 [INF] Start processing HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authn?authenticationId=0XnOpJmTR"
+2022-10-22 22:18:00.474 +08:00 [INF] Sending HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authn?authenticationId=0XnOpJmTR"
+2022-10-22 22:18:00.503 +08:00 [INF] Received HTTP response headers after 27.9378ms - 200
+2022-10-22 22:18:00.503 +08:00 [INF] End processing HTTP request after 30.474ms - 200
+2022-10-22 22:21:23.314 +08:00 [INF] Now listening on: https://localhost:7064
+2022-10-22 22:21:23.333 +08:00 [INF] Now listening on: http://localhost:5061
+2022-10-22 22:21:23.334 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-22 22:21:23.334 +08:00 [INF] Hosting environment: Development
+2022-10-22 22:21:23.334 +08:00 [INF] Content root path: /Users/jamisliao/twmvc_blockchain/twmvc_example/twmvc_example/
+2022-10-22 22:21:29.159 +08:00 [INF] Test serilog.
+2022-10-22 22:21:29.216 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authn"
+2022-10-22 22:21:29.217 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authn"
+2022-10-22 22:21:29.372 +08:00 [INF] Received HTTP response headers after 153.5876ms - 200
+2022-10-22 22:21:29.373 +08:00 [INF] End processing HTTP request after 158.6952ms - 200
+2022-10-22 22:21:37.062 +08:00 [INF] Test serilog.
+2022-10-22 22:21:37.068 +08:00 [INF] Start processing HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authn"
+2022-10-22 22:21:37.068 +08:00 [INF] Sending HTTP request POST "https://flow-wallet-testnet.blocto.app/api/flow/authn"
+2022-10-22 22:21:37.232 +08:00 [INF] Received HTTP response headers after 163.0618ms - 200
+2022-10-22 22:21:37.232 +08:00 [INF] End processing HTTP request after 163.9643ms - 200
+2022-10-22 22:21:48.009 +08:00 [INF] AuthenticationId: C81Mo9SMU
+2022-10-22 22:21:48.014 +08:00 [INF] Start processing HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authn?authenticationId=C81Mo9SMU"
+2022-10-22 22:21:48.014 +08:00 [INF] Sending HTTP request GET "https://flow-wallet-testnet.blocto.app/api/flow/authn?authenticationId=C81Mo9SMU"
+2022-10-22 22:21:48.049 +08:00 [INF] Received HTTP response headers after 35.0178ms - 200
+2022-10-22 22:21:48.049 +08:00 [INF] End processing HTTP request after 35.4382ms - 200

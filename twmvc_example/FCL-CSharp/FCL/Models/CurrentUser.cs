@@ -134,6 +134,8 @@ namespace Flow.FCL.Models
                                                                                                                                  Signature = Encoding.UTF8.GetBytes(signature.SignatureStr())
                                                                                                                              });
                                                                                           }
+                                                                                          
+                                                                                          var tmp = accountProofData.Signature.First().Signature.BytesToHex();
                                                                                           var isVerify = _appUtility.VerifyAccountProofSignature(accountProofData.AppId, accountProofData, "0x5b250a8a85b44a67");
                                                                                           if(isVerify == false)
                                                                                           {

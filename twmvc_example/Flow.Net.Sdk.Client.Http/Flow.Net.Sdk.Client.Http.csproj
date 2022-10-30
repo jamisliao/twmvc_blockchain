@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<Authors>Tyron Brand</Authors>
+	<Version>0.0.1</Version>
+	<Company>Tyron Brand</Company>
+	<Description>HTTP SDK for flow.net</Description>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<RepositoryUrl>https://github.com/tyronbrand/flow.net</RepositoryUrl>
+	<PackageProjectUrl>https://github.com/tyronbrand/flow.net</PackageProjectUrl>
+	<RepositoryType>git</RepositoryType>
+	<PackageTags></PackageTags>
+	<IncludeSymbols>true</IncludeSymbols>
+	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Flow.Net.Sdk.Core\Flow.Net.Sdk.Core.csproj" />
+  </ItemGroup>
+
+</Project>
