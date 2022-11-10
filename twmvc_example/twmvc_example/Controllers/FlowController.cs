@@ -12,7 +12,7 @@ using twmvc_example.Models;
 namespace twmvc_example.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class FlowController : ControllerBase
 {
     private ILogger<FlowController> _logger;
