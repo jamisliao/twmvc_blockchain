@@ -6,3 +6,5 @@ twmvc_blockchain/obj
 */*/bin
 */*/obj
 .DS_Store
+
+twmvc_example/twmvc_example/logs/
