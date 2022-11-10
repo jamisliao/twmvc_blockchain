@@ -21,9 +21,6 @@
     <ItemGroup>
       <ProjectReference Include="..\Blocto.SDK\Blocto.SDK.csproj" />
       <ProjectReference Include="..\FCL-CSharp\FCL-CSharp.csproj" />
-      <ProjectReference Include="..\Flow.Net.Sdk.Client.Http\Flow.Net.Sdk.Client.Http.csproj" />
-      <ProjectReference Include="..\Flow.Net.Sdk.Core\Flow.Net.Sdk.Core.csproj" />
-      <ProjectReference Include="..\Flow.Net.SDK\Flow.Net.Sdk.csproj" />
       <ProjectReference Include="..\twmcv_example.Client\twmcv_example.Client.csproj" />
     </ItemGroup>
 

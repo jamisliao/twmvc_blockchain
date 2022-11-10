@@ -12,10 +12,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\..\flow.net\src\Flow.Net.Sdk.Client.Http\Flow.Net.Sdk.Client.Http.csproj" />
-      <ProjectReference Include="..\..\..\flow.net\src\Flow.Net.Sdk.Core\Flow.Net.Sdk.Core.csproj" />
-      <ProjectReference Include="..\..\..\flow.net\src\Flow.Net.SDK\Flow.Net.Sdk.csproj" />
+      <ProjectReference Include="..\Flow.Net.Sdk.Client.Http\Flow.Net.Sdk.Client.Http.csproj" />
       <ProjectReference Include="..\Flow.Net.Sdk.Core\Flow.Net.Sdk.Core.csproj" />
+      <ProjectReference Include="..\Flow.Net.SDK\Flow.Net.Sdk.csproj" />
     </ItemGroup>
 
     <ItemGroup>

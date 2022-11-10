@@ -6,13 +6,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCL-CSharp", "FCL-CSharp\FC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blocto.SDK", "Blocto.SDK\Blocto.SDK.csproj", "{2E09EA64-DB2E-4F82-A29C-74D38278F7C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flow.Net.Sdk", "Flow.Net.SDK\Flow.Net.Sdk.csproj", "{AD266687-070A-45A1-8509-E2512FF535DB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flow.Net.Sdk.Client.Http", "Flow.Net.Sdk.Client.Http\Flow.Net.Sdk.Client.Http.csproj", "{3BEBEDAB-5F2E-40C7-B4C1-94C7C48025AD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flow.Net.Sdk.Core", "Flow.Net.Sdk.Core\Flow.Net.Sdk.Core.csproj", "{BEBD97D3-7592-4DA8-8F4C-C713B9B6B13B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "twmcv_example.Client", "twmcv_example.Client\twmcv_example.Client.csproj", "{E817E130-BC7A-415B-8EE2-CCFC8E0402D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flow.Net.Sdk", "Flow.Net.SDK\Flow.Net.Sdk.csproj", "{DACF6F27-DC04-42E5-A6C2-379A5F8C430E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flow.Net.Sdk.Client.Http", "Flow.Net.Sdk.Client.Http\Flow.Net.Sdk.Client.Http.csproj", "{8CCA5139-F3A8-42FA-BFB8-267F384C80C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flow.Net.Sdk.Core", "Flow.Net.Sdk.Core\Flow.Net.Sdk.Core.csproj", "{C64FF958-EB03-4D2B-9AF3-5AE01755D0CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,17 +32,17 @@ Global
 		{2E09EA64-DB2E-4F82-A29C-74D38278F7C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E09EA64-DB2E-4F82-A29C-74D38278F7C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E09EA64-DB2E-4F82-A29C-74D38278F7C2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD266687-070A-45A1-8509-E2512FF535DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD266687-070A-45A1-8509-E2512FF535DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD266687-070A-45A1-8509-E2512FF535DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD266687-070A-45A1-8509-E2512FF535DB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3BEBEDAB-5F2E-40C7-B4C1-94C7C48025AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3BEBEDAB-5F2E-40C7-B4C1-94C7C48025AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3BEBEDAB-5F2E-40C7-B4C1-94C7C48025AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3BEBEDAB-5F2E-40C7-B4C1-94C7C48025AD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BEBD97D3-7592-4DA8-8F4C-C713B9B6B13B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BEBD97D3-7592-4DA8-8F4C-C713B9B6B13B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BEBD97D3-7592-4DA8-8F4C-C713B9B6B13B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BEBD97D3-7592-4DA8-8F4C-C713B9B6B13B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DACF6F27-DC04-42E5-A6C2-379A5F8C430E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DACF6F27-DC04-42E5-A6C2-379A5F8C430E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DACF6F27-DC04-42E5-A6C2-379A5F8C430E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DACF6F27-DC04-42E5-A6C2-379A5F8C430E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CCA5139-F3A8-42FA-BFB8-267F384C80C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CCA5139-F3A8-42FA-BFB8-267F384C80C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CCA5139-F3A8-42FA-BFB8-267F384C80C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CCA5139-F3A8-42FA-BFB8-267F384C80C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C64FF958-EB03-4D2B-9AF3-5AE01755D0CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C64FF958-EB03-4D2B-9AF3-5AE01755D0CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C64FF958-EB03-4D2B-9AF3-5AE01755D0CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C64FF958-EB03-4D2B-9AF3-5AE01755D0CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
