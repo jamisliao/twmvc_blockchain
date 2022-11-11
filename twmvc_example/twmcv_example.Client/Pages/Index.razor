@@ -4,9 +4,34 @@
 
 <h1>Hello TW MVC</h1>
 
+@if (!string.IsNullOrEmpty(Address))
+{
+  <form class="container" onsubmit="@Mutate">
+    <div class="row">
+      <span class="col">Your Address</span>
+      <input class="col" readonly @bind-value="@Address" />
+    </div>
+    <div class="row">
+      <span class="col">Recevie Address</span>
+      <input class="col" @bind-value="@ReceiveAddress" />
+    </div>
+    <div class="row">
+      <span class="col">Transfer Amount</span>
+      <input class="col" type="number" @bind-value="@TransferAmount">
+    </div>
+    <button type="submit">Mutate</button>
+
+    @if (!string.IsNullOrEmpty(TransactionResultUrl))
+    {
+      <div class="row">
+        <span class="col">Transaction result</span>
+        <a target="_blank" href="@TransactionResultUrl">@TransactionResultUrl</a>
+      </div>
+    }
+  </form>
+}
+
 @if (!string.IsNullOrEmpty(Url))
 {
   <iframe src="@Url" class="w-100" height="500px"></iframe>
 }
-
-@Address
