@@ -1,4 +1,5 @@
 using System.Net.Http.Json;
+using System.Text.Json;
 using Microsoft.AspNetCore.Components;
 using twmcv_example.Client.Models;
 
@@ -17,11 +18,18 @@ public partial class Index
   private string TransactionSessionId;
   private string TransactionId;
   private string TransactionResultUrl;
+  private string Message;
+  private string SignatureId;
+  private string SignatureData;
 
   protected override async Task OnInitializedAsync()
   {
     await base.OnInitializedAsync();
 
+  }
+
+  private async void Login()
+  {
     var result = await _http.GetFromJsonAsync<APIResult>("api/flow/login");
     Url = result.outPut.Result["Url"];
     AuthenticationId = result.outPut.Result["AuthenticationId"];
@@ -93,6 +101,50 @@ public partial class Index
       Url = "";
       TransactionId = result.outPut.Result["txId"];
       TransactionResultUrl = result.outPut.Result["FlowScanUrl"];
+      await InvokeAsync(StateHasChanged);
+    }
+    catch (Exception e)
+    {
+      Console.WriteLine(e.ToString());
+    }
+  }
+
+  private async void SignMessage()
+  {
+    try
+    {
+      Url = "";
+      
+      var response =
+        await _http.PostAsync($"api/flow/signmessage/{Address}/{Message}", null);
+      var result = await response.Content.ReadFromJsonAsync<APIResult>();
+      Url = result.outPut.Result["Url"];
+      SignatureId = result.outPut.Result["SignatureId"];
+      
+      StateHasChanged();
+
+      checkTimer = new Timer(CheckMessage, null, 0, 1000);
+    }
+    catch (Exception e)
+    {
+      Console.WriteLine(e.ToString());
+    }
+  }
+
+  private async void CheckMessage(object? state)
+  {
+    try
+    {
+      var result =
+        await _http.GetFromJsonAsync<APIResultForList>($"api/flow/signmessage/Result/{SignatureId}");
+      if (result.outPut.ErrorCode != 0)
+      {
+        return;
+      }
+
+      await checkTimer.DisposeAsync();
+      Url = "";
+      SignatureData = JsonSerializer.Serialize(result.outPut.Result[0]);
       await InvokeAsync(StateHasChanged);
     }
     catch (Exception e)

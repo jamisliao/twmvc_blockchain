@@ -11,3 +11,15 @@ public record Output
   public Dictionary<string, string> Result { get; set; }
   public DateTime Timestamp { get; set; }
 }
+
+public record APIResultForList
+{
+  public OutputList outPut { get; set; }
+
+  public record OutputList
+  {
+    public int ErrorCode { get; set; }
+    public dynamic Result { get; set; }
+    public DateTime Timestamp { get; set; }
+  }
+}

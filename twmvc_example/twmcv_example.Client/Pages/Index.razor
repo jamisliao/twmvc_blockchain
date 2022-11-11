@@ -4,34 +4,61 @@
 
 <h1>Hello TW MVC</h1>
 
+@if (string.IsNullOrEmpty(AuthenticationId))
+{
+  <button type="button" class="btn btn-primary mb-3" onclick="@Login">Login Blocto</button>
+}
+
 @if (!string.IsNullOrEmpty(Address))
 {
-  <form class="container" onsubmit="@Mutate">
-    <div class="mb-3">
-      <label class="form-label" for="Address">Your Address</label>
-      <input class="form-control" id="Address" readonly @bind-value="@Address" />
-    </div>
-    <div class="mb-3">
-      <label class="form-label" for="ReceiveAddress">Recevie Address</label>
-      <input class="form-control" id="ReceiveAddress" @bind-value="@ReceiveAddress" />
-    </div>
-    <div class="mb-3">
-      <label class="form-label" for="Amount">Transfer Amount</label>
-      <input class="form-control" id="Amount" type="number" @bind-value="@TransferAmount">
-    </div>
-    <button type="submit" class="btn btn-primary mb-3">Mutate</button>
-
-    @if (!string.IsNullOrEmpty(TransactionResultUrl))
-    {
-      <div class="">
-        <span class="form-label">Transaction result</span>
-        <a target="_blank" class="form-control" href="@TransactionResultUrl">@TransactionResultUrl</a>
+  <div class="card mb-3">
+      <div class="card-body">
+        <label class="form-label" for="Address">Your Address</label>
+        <input class="form-control" id="Address" readonly @bind-value="@Address" />
       </div>
-    }
-  </form>
+  </div>
+  <div class="card mb-3">
+    <form class="card-body" onsubmit="@Mutate">
+      <div class="mb-3">
+        <label class="form-label" for="ReceiveAddress">Recevie Address</label>
+        <input class="form-control" id="ReceiveAddress" @bind-value="@ReceiveAddress" />
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="Amount">Transfer Amount</label>
+        <input class="form-control" id="Amount" type="number" @bind-value="@TransferAmount">
+      </div>
+      <button type="submit" class="btn btn-primary mb-3">Mutate</button>
+  
+      @if (!string.IsNullOrEmpty(TransactionResultUrl))
+      {
+        <div>
+          <label class="form-label">Transaction result</label>
+          <a target="_blank" class="form-control text-break" href="@TransactionResultUrl">@TransactionResultUrl</a>
+        </div>
+      }
+    </form>
+  </div>
+  
+  <div class="card">
+    <form class="card-body" onsubmit="@SignMessage">
+      <div class="mb-3">
+        <label class="form-label" for="Message">Message</label>
+        <input class="form-control" id="Message" @bind-value="@Message" />
+      </div>
+      <button type="submit" class="btn btn-primary mb-3">Sign Message</button>
+  
+      @if (!string.IsNullOrEmpty(SignatureData))
+      {
+        <div>
+          <lable class="form-label">SignatureData</lable>
+          <p class="form-control text-break">@SignatureData</p>
+        </div>
+      }
+    </form>
+  </div>
 }
 
 @if (!string.IsNullOrEmpty(Url))
 {
-  <iframe src="@Url" class="w-100" height="500px"></iframe>
+  <iframe src="@Url" class="w-100" height="800px"></iframe>
 }
