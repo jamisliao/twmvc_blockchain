@@ -58,7 +58,6 @@
   </div>
 }
 
-@if (!string.IsNullOrEmpty(Url))
-{
-  <iframe src="@Url" class="w-100" height="800px"></iframe>
-}
+<dialog open="@(!string.IsNullOrEmpty(Url))">
+    <iframe src="@Url" class="modal-body w-100" height="800px"></iframe>
+</dialog>
