@@ -7,25 +7,25 @@
 @if (!string.IsNullOrEmpty(Address))
 {
   <form class="container" onsubmit="@Mutate">
-    <div class="row">
-      <span class="col">Your Address</span>
-      <input class="col" readonly @bind-value="@Address" />
+    <div class="mb-3">
+      <label class="form-label" for="Address">Your Address</label>
+      <input class="form-control" id="Address" readonly @bind-value="@Address" />
     </div>
-    <div class="row">
-      <span class="col">Recevie Address</span>
-      <input class="col" @bind-value="@ReceiveAddress" />
+    <div class="mb-3">
+      <label class="form-label" for="ReceiveAddress">Recevie Address</label>
+      <input class="form-control" id="ReceiveAddress" @bind-value="@ReceiveAddress" />
     </div>
-    <div class="row">
-      <span class="col">Transfer Amount</span>
-      <input class="col" type="number" @bind-value="@TransferAmount">
+    <div class="mb-3">
+      <label class="form-label" for="Amount">Transfer Amount</label>
+      <input class="form-control" id="Amount" type="number" @bind-value="@TransferAmount">
     </div>
-    <button type="submit">Mutate</button>
+    <button type="submit" class="btn btn-primary mb-3">Mutate</button>
 
     @if (!string.IsNullOrEmpty(TransactionResultUrl))
     {
-      <div class="row">
-        <span class="col">Transaction result</span>
-        <a target="_blank" href="@TransactionResultUrl">@TransactionResultUrl</a>
+      <div class="">
+        <span class="form-label">Transaction result</span>
+        <a target="_blank" class="form-control" href="@TransactionResultUrl">@TransactionResultUrl</a>
       </div>
     }
   </form>
